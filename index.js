@@ -4,17 +4,16 @@ import(alienPlanets);
 
 const planets = document.querySelector("#planets");
 for (let planet of alienPlanets) {
-	createBox(planet.id, planet.name, planet.emoji);
+	box(planet.id, planet.name, planet.emoji);
 }
-function createBox(id, name, emoji) {
-	const subPlanets = document.createElement("div");
+function box(id, name, emoji) {
+	const eachPlanets = document.createElement("div");
 	const h3 = document.createElement("h3");
 	const p = document.createElement("p");
-	subPlanets.id = id;
+	eachPlanets.id = id;
 	h3.textContent = name;
 	p.textContent = emoji;
-	subPlanets.appendChild(h3);
-	subPlanets.appendChild(p);
-	planets.appendChild(subPlanets);
+	eachPlanets.appendChild(h3);
+	eachPlanets.appendChild(p);
+	planets.appendChild(eachPlanets);
 }
-console.log(planets);
