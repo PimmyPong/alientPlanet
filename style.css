@@ -1,0 +1,16 @@
+#planets {
+    display: flex;
+    background-color: white;
+  
+    gap: 10px;
+  }
+  #planets div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-wrap: nowrap;
+    padding: 20px 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+  }
+  
